@@ -27,7 +27,7 @@ Buiding the Diffusion Modle
 # Step 1 : The forward process = Noise scheduler
 
 def linear_beta_schedule(timesteps, start=0.001, end=0.02):
-    return torch.linspace(start, end, timesteps)
+    return torch.linspace(start, end, timesteps)    # linspace가 뭐하는 거지?
 
 
 def get_index_from_list(vals, t, x_shape):
